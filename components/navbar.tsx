@@ -237,7 +237,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Menu, Target, X } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import {
@@ -267,17 +267,17 @@ const navItems = [
       { title: "Management Members", href: "/about/management" },
       { title: "Principal's Message", href: "/about/principal-message" },
       { title: "Curriculum", href: "/about/curriculum" },
+   { title: "Infrastructure", href: "/pdf/Infrastructure Details.pdf", target: "_blank" },
+       { title: "Rules", href: "/about/rules" },
+       { title: "Faculty Information", href: "/about/faculty" }
+
+
     ],
   },
   {
     title: "Comprehensive Info",
     href: "/comprehensive-info",
-    subItems: [
-      { title: "School History", href: "/comprehensive-info/history" },
-      { title: "Academic Excellence", href: "/comprehensive-info/academic-excellence" },
-      { title: "Infrastructure", href: "/comprehensive-info/infrastructure" },
-      { title: "Awards & Recognition", href: "/comprehensive-info/awards" },
-    ],
+    subItems: [],
   },
   {
     title: "Extra Curricular Activities",
@@ -296,17 +296,17 @@ const navItems = [
       { title: "Elligibility & intake", href: "/admission/elligibilty-intake" },
       { title: "Fee Structure", href: "/admission/fees-structure" },
     
-      { title: "Admission Form", href: "/admission/admission-form" },
+      { title: "Admission Form", href: "/pdf/AdmissionForm.pdf" ,target: "_blank" },
     ],
   },
   {
     title: "Academics",
     href: "/academics",
     subItems: [
-      { title: "Acadmic Planner", href: "/academics/academic-planner" },
-      { title: "Programs", href: "/academics/programs" },
+      { title: "Acadmic Planner", href: "/pdf/C2 Acdemic Calender.pdf",Target: "_blank" },
+      { title: "Programmes", href: "/academics/programs" },
       { title: "Teaching Methodology", href: "/academics/teaching-methodology" },
-      { title: "Activity", href: "/academics/activity" },
+      { title: "Activity", href: "/" },
     ],
   },
   {
@@ -321,8 +321,7 @@ const navItems = [
     subItems: [
       { title: "Photo Gallery", href: "/gallery/photos" },
       { title: "Video Gallery", href: "/gallery/videos" },
-      { title: "Events", href: "/gallery/events" },
-      { title: "Achievements", href: "/gallery/achievements" },
+    
     ],
   },
   {
