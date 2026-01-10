@@ -262,13 +262,14 @@ import { motion } from "framer-motion";
 import {
   Monitor,
   Trophy,
-  School,
+ 
   Bus,
   Video,
-  AlertCircle,
-  ArrowRight
+ 
+  Book
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -277,59 +278,111 @@ const fadeIn = {
 
 const facilities = [
  
-  {
-    title: "Computer Lab",
-    icon: <Monitor className="text-purple-600 w-6 h-6" />,
-    description:
-      "The age of technology is upon us and it is becoming increasingly difficult for someone to function without the knowledge of computers. Our Computer lab with adequate number of PCs has all the required software installed which in turn facilitates the teaching-learning process.",
-    image: "/images/Computer-lab1.jpg",
-    color: "bg-pink-50"
-  },
+  // {
+  //   title: "Computer Lab",
+  //   icon: <Monitor className="text-[#800000] w-6 h-6" />,
+  //   description:
+  //     "The age of technology is upon us and it is becoming increasingly difficult for someone to function without the knowledge of computers. Our Computer lab with adequate number of PCs has all the required software installed which in turn facilitates the teaching-learning process.",
+  //   image: "/images/Computer-lab1.jpg",
+  //   color: "bg-pink-50"
+  // },
   {
     title: "Sports",
-    icon: <Trophy className="text-purple-600 w-6 h-6" />,
+    icon: <Trophy className="text-[#800000] w-6 h-6" />,
     description:
       "Our school has a state-of-the-art playground where new age as well as traditional sports are played.",
     image: "/images/Sports.png",
     color: "bg-rose-50"
   },
   {
-    title: "Transport",
-    icon: <School className="text-purple-600 w-6 h-6" />,
+    title: "Library",
+    icon: <Book className="text-[#800000] w-6 h-6" />,
     description:
-      "To facilitate easy movement of students to and from school, the school acts “only” as a coordinator between parents and the Bus Contractors. The bus service covers a radius of ten kilometres around the school. Bus services are optional and will be available to the wards of only those parents who will furnish the undertaking as prescribed by the school and available with the school transport in-charge.Students can avail the school transport arrangements subject to the availability of seats. The school does not entertain any request for change in bus-routes to suit an individual’s convenience. Change of bus stop for a day or a week is not entertained.Parents are not allowed to travel in the bus under any circumstances. Parents are requested to see the children are escorted to and from the bus.Students who come on their own must report to school by 8:30 am.Bus services to be availed for one academic year without withdrawal in between. Transport fees are not included in School Fees. Transport Fees is non-refundable.Bus facility can be withdrawn unless the bus contractor complies with the safety guidelines laid down by the Honorable Supreme Court of India.",
-    image: "/images/schoolbus.jpg",
+      "A well-equipped library to widen students' horizons with diverse reading materials and research resources.",
+      image: "/images/library.jpg",
     color: "bg-purple-50"
+    
   },
    {
     title: "CCTV",
-    icon: <Video className="text-purple-600 w-6 h-6" />,
+    icon: <Video className="text-[#800000] w-6 h-6" />,
     description: "CCTV Facility Available Inside School Building.",
     image: "/images/CCTV.png",
     color: "bg-indigo-50"
   },
+  {
+    title: "Computer Lab",
+    icon: <Monitor className="text-[#800000] w-6 h-6" />,
+    description:
+      "The age of technology is upon us and it is becoming increasingly difficult for someone to function without the knowledge of computers. Our Computer lab with adequate number of PCs has all the required software installed which in turn facilitates the teaching-learning process.",   
+      image: "/images/Computer-lab2.jpg",
+  },
+  {
+  title: "Mathematics Lab",
+  icon: <Monitor className="text-[#800000] w-6 h-6" />,
+  description:
+    "Our Mathematics lab provides a hands-on learning experience, allowing students to explore and understand complex concepts through practical experiments and activities. It's an ideal space for students to develop problem-solving skills and build a strong foundation in mathematics.",
+  image: "/images/Math.jpg",
+  color: "bg-yellow-50"
+},
+{
+  title: "Composite Science Lab",
+  icon: <Monitor className="text-[#800000] w-6 h-6" />,
+  description:
+    "Our Composite Science lab is a well-equipped facility that fosters curiosity and experimentation, enabling students to explore concepts in Physics, Chemistry, and Biology through hands-on activities. It provides a comprehensive learning experience, bridging theoretical knowledge with practical application.",
+  image: "/images/science.jpg", 
+  color: "bg-green-50"
+  },
+  {
+    title: "Smart Classrooms",
+    icon: <Monitor className="text-[#800000] w-6 h-6" />,
+    description:
+    "Our smart board classroom is equipped with interactive technology, enabling engaging and immersive learning experiences for students. The smart board facilitates dynamic lessons, presentations, and discussions, making complex concepts more accessible and fun to learn.",
+    image: "/images/SmartClassroom.jpg",
+    color: "bg-blue-50"
+
+
+  }
+
 ];
 
-const transportRules = [
-  "Students should reach the bus stop 5 minutes before the boarding time.",
-  "At the bus, they must get into the bus in an orderly manner.",
-  "They should not put their hands or heads outside.",
-  "They should be well disciplined, good mannered and should not use any indecent words.",
-  "They should wait at the bus stop after getting off and should cross the road with proper attention.",
-  "Any damage made to the school bus will be fined.",
-  "To facilitate easy movement of students to and from school, the school acts 'only' as a coordinator between parents and the Bus Contractors. The bus service covers a radius of ten kilometres around the school. Bus services are optional and will be available to the wards of only those parents who will furnish the undertaking as prescribed by the school and available with the school transport in-charge.",
-  "Students can avail the school transport arrangements subject to the availability of seats. The school does not entertain any request for change in bus-routes to suit an individual’s convenience. Change of bus stop for a day or a week is not entertained.",
-  "Parents are not allowed to travel in the bus under any circumstances. Parents are requested to see the children are escorted to and from the bus.",
-  "Students who come on their own must report to school by 8:30 am.",
-  "Bus services to be availed for one academic year without withdrawal in between.",
-  "Transport fees are not included in School Fees. Transport Fees is non-refundable.",
-  "Bus facility can be withdrawn unless the bus contractor complies with the safety guidelines laid down by the Honorable Supreme Court of India."
-];
+// const transportRules = [
+//   "Students should reach the bus stop 5 minutes before the boarding time.",
+//   "At the bus, they must get into the bus in an orderly manner.",
+//   "They should not put their hands or heads outside.",
+//   "They should be well disciplined, good mannered and should not use any indecent words.",
+//   "They should wait at the bus stop after getting off and should cross the road with proper attention.",
+//   "Any damage made to the school bus will be fined.",
+//   "To facilitate easy movement of students to and from school, the school acts 'only' as a coordinator between parents and the Bus Contractors. The bus service covers a radius of ten kilometres around the school. Bus services are optional and will be available to the wards of only those parents who will furnish the undertaking as prescribed by the school and available with the school transport in-charge.",
+//   "Students can avail the school transport arrangements subject to the availability of seats. The school does not entertain any request for change in bus-routes to suit an individual’s convenience. Change of bus stop for a day or a week is not entertained.",
+//   "Parents are not allowed to travel in the bus under any circumstances. Parents are requested to see the children are escorted to and from the bus.",
+//   "Students who come on their own must report to school by 8:30 am.",
+//   "Bus services to be availed for one academic year without withdrawal in between.",
+//   "Transport fees are not included in School Fees. Transport Fees is non-refundable.",
+//   "Bus facility can be withdrawn unless the bus contractor complies with the safety guidelines laid down by the Honorable Supreme Court of India."
+// ];
 
 export default function FacilitiesPage() {
   return (
     <div className="bg-gradient-to-b from-purple-50 to-white font-serif min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <Link href="/" className="text-[#800000] text-lg font-semibold flex items-center gap-2 mb-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M11 19l-7-7 7-7M5 12h14"
+            />
+          </svg>
+          Back to Home
+        </Link>
         {/* Hero */}
         <motion.div
           initial="hidden"
@@ -338,9 +391,9 @@ export default function FacilitiesPage() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">Facilities</span>
+            Our <span className="bg-[#800000] 0 text-transparent bg-clip-text">Facilities</span>
           </h1>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mx-auto mb-6"></div>
+          <div className="w-24 h-1.5 bg-[#800000] to-pink-500 rounded-full mx-auto mb-6"></div>
         </motion.div>
 
         {/* Facilities Grid */}
@@ -382,7 +435,7 @@ export default function FacilitiesPage() {
         </div>
 
         {/* Transport Rules */}
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -391,7 +444,7 @@ export default function FacilitiesPage() {
         >
           <div className="p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-              <Bus className="w-6 h-6 text-indigo-600 mr-2" />
+              <Bus className="w-6 h-6 text-[#800000] mr-2" />
               Transport - School Bus Rules
             </h2>
             <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm">
@@ -400,7 +453,7 @@ export default function FacilitiesPage() {
               ))}
             </ul>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

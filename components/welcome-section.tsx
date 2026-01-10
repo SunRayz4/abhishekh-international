@@ -46,10 +46,10 @@ export function WelcomeSection() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
            <h2 className="mb-4 text-2xl font-bold sm:text-3xl text-gray-800">
-          Welcome To <span className="text-[#8e24aa]">Abhishek International School </span>
+          Welcome To <span className="text-[#800000]">Abhishek International School </span>
         </h2>
 
-          <div className="mb-8 h-1 w-24 bg-gradient-to-r from-[#6a1b9a] via-[#8e24aa] to-[#ab47bc] mx-auto"></div>
+          <div className="mb-8 h-1 w-24 bg-[#800000] mx-auto"></div>
 
           <p className="mb-8 text-lg text-gray-600 font-serif">
             At Abhishek International School, we believe in nurturing young minds to become future leaders. Our holistic
@@ -66,7 +66,7 @@ export function WelcomeSection() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button
               asChild
-              className="bg-gradient-to-r from-[#6a1b9a] via-[#8e24aa] to-[#ab47bc] hover:from-[#7b1fa2] hover:to-[#9c27b0] text-white font-serif"
+              className="bg-[#800000] text-white font-serif"
             >
               <Link href="/admission">Apply for Admission</Link>
             </Button>
@@ -74,7 +74,7 @@ export function WelcomeSection() {
             <Button
               asChild
               variant="outline"
-              className="border-[#8e24aa] text-[#8e24aa] hover:bg-[#f3e5f5] font-serif"
+              className="border-[#800000] text-[#800000] hover:bg-[#f3e5f5] font-serif"
             >
               <Link href="/about">Learn More About Us</Link>
             </Button>

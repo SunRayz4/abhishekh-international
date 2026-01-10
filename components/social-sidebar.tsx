@@ -1,24 +1,29 @@
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Youtube, Linkedin } from "lucide-react"
+import {  Instagram,  Youtube } from "lucide-react"
 
 export function SocialSidebar() {
   return (
     <div className="social-sidebar">
-      <Link href="#" aria-label="Facebook">
-        <Facebook className="h-6 w-6 text-blue-600" />
-      </Link>
-      <Link href="#" aria-label="Instagram">
-        <Instagram className="h-6 w-6 text-pink-600" />
-      </Link>
-      <Link href="#" aria-label="Twitter">
-        <Twitter className="h-6 w-6 text-sky-500" />
-      </Link>
-      <Link href="#" aria-label="Youtube">
-        <Youtube className="h-6 w-6 text-red-600" />
-      </Link>
-      <Link href="#" aria-label="LinkedIn">
-        <Linkedin className="h-6 w-6 text-blue-700" />
-      </Link>
+      
+    <Link
+    href="https://www.instagram.com/abhishek_international_school?igsh=Y2h5d2NlOGY0aWVz" // Replace with actual Instagram link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#f3e5f5] transition-colors"
+  >
+    <Instagram className="h-5 w-5" />
+    <span className="sr-only">Instagram</span>
+  </Link>
+  <Link
+    href="https://youtube.com/@aismoshipradhikaran?feature=shared" // Replace with actual YouTube link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#f3e5f5] transition-colors"
+  >
+    <Youtube className="h-5 w-5" />
+    <span className="sr-only">YouTube</span>
+  </Link>
+      
     </div>
   )
 }

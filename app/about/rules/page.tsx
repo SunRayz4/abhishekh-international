@@ -73,8 +73,8 @@ export default function RulesPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl font-bold text-center text-[#6a1b9a] mb-3">Student Guidelines</h1>
-          <div className="h-1 w-24 mx-auto bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] rounded-full mb-6"></div>
+          <h1 className="text-4xl font-bold text-center text-[#800000] mb-3">Student Guidelines</h1>
+          <div className="h-1 w-24 mx-auto bg-gradient-to-r from-[#800000] to-[#800000] rounded-full mb-6"></div>
           <p className="max-w-2xl text-center mx-auto text-gray-700 text-lg">
             These rules ensure a safe, respectful, and productive learning environment at Abhishek International School.
           </p>

@@ -227,36 +227,36 @@ const aboutNavItems = [
 ];
 
 const managementMembers = [
+
   {
     name: "Mr. Gururaj Rachayya Charantimath",
-    title: "President",
-    image: "/images/President.png",
-    message: `AIS, our students have always been our pride and joy. Their achievements in academics exemplify the consistent efforts put in at schools to nurture each student. We address this emergent segment of quality conscious parents who has the desire of grooming a confident child for tomorrow. Our teaching methods based on experiential learning leads to effective development of the child's cognitive skills and easy understanding of concepts. Our methodology ensures strong moral, social, emotional and physical development of a child, converting them from a fledgling toddler into a confident, inquisitive and enthusiastic life-long learner. Our approach ensures that the child explores all his skills while learning.`,
-  },
-  {
-    name: "Mr. Suresh Uttam Kasbe",
-    title: "Vice President",
-    image: "/images/vicePresident.jpg",
-    message: `An individual's intelligence depends on the heredity and environment. We cannot change the heredity of any individual but we can definitely change the environment wherein the individual is able to grasp and keep oneself abreast of the things around them. Our teachers at Abhishek International Moshi Pradhikaran are always concerned and working towards how enhance learning environment to stimulate learning and achievement to the fullest extent. At Abhishek's Information and Communication Technology provides a support to the students to take an active role in the learning process and strengthen all the multiple intelligences necessary for quality learning. Each child is different. Therefore here we try and help each child to develop self confidence, ability of expression, social behaviour, right attitude towards teachers, classmates and environment and to develop various life skills. We also promote various co-curricular activities along with academics like Yoga, Art and Craft< Music, Physical Education thus taking care of the overall personal development of the child. I strongly believe that education is a continuous and never ending process. Our main aim is to foster a team spirit and encourage a sense of responsibility and self discipline amongst students to develop leadership qualities.`,
+    title: "Chairman",
+    image: "/images/chairman.jpg",
+    message: `As Chairman of Abhishek International School, I am delighted to share with you our vision for holistic education. At AIS, we strive to nurture young minds that are not only academically excellent but also deeply rooted in our rich cultural heritage. Our गुरु शिष्य परंपरा-inspired approach empowers our students to become compassionate, empathetic, and responsible citizens. I invite you to join us on this beautiful journey of creating beautiful citizens for our country, where education meets values, and learning meets character. I am confident that together, we can shape a brighter future for our nation, and I look forward to seeing the incredible impact our students will make.`,
   },
   {
     name: "Mrs. Geeta Gururaj Charantimath",
     title: "Executive Director",
-    image: "/images/executive-director.png",
-    message: `Abhishek International School look forward to this academic session, full of hope and promise that each and every child will be successful and productive members of the family Apart from striving for advancement in academic achievement, AHPS also nurtures students with good and proper attitude and values. The school offers countless opportunities for students to take part in all sorts of co-curricular activities. The achievements of the school do not come easy. The drive for excellence permeates deeply in the school culture. We have a strong belief to promote harmony, dedication and a win-win scenario for everyone in school. Harmony can be interpreted as 'team cohesion'. With a great team of teaching staff and excellent students, Abhishek International School expects a continuous and sustainable advancement in learning and teaching. Teaching and learning are the core activities of a school. Our staff is committed, caring and professional. Great teachers are the most important ingredient to the success of our school. We always set students' benefit to be the first priority. The school focuses on promoting a high level of learning culture. School follows refined policies to streamline the academic and co-curricular activities. The school cares and responds proactively to the needs of students and parents.`,
+    image: "/images/executive-director1.jpg",
+    message: `As we step into a new academic session, I am filled with optimism for what lies ahead. At AIS, we believe that every child holds immense potential — and it is our mission to help them discover and develop it in a nurturing, inspiring environment.Academic excellence is just one part of our vision. Equally important is shaping students into thoughtful, confident, and responsible individuals. Through a balance of strong academics, values-based education, and a wide range of co-curricular opportunities, we aim to provide a well-rounded learning experience.
+Our dedicated team of educators is the heart of our school. Their passion, professionalism, and care ensure that every student is supported in their learning journey. We also place great value on collaboration — between students, staff, and parents — because we know that meaningful progress happens when we work together.
+
+At AIS, we are committed to building a culture of growth, respect, and continuous improvement. With every new year, we strive to raise the bar — for ourselves and for the future of our students.
+
+Thank you for being part of our school community. We look forward to another year of learning, discovery, and shared success.`,
   },
-  {
-    name: "Mrs. Manisha Kasbe",
-    title: "Secretary",
-    image: "/images/secretary.jpg",
-    message: `Every Student deserves a Childhood full of enthusiasm and experimentation. This is a right time to allow them to expand their horizons and spread their wings. At AIS, every student is exposed to systematic extensive learning under the guidance of trained and perceptive educators so that they will develop a global outlook. The Abhishek International School will spare no efforts to make learning a joyful and sustainable activity for its students, making education a real celebration. The stress-free environment encourages each child to explore, experiment, and discover the world around them. As a Director, I welcome all parents to willingly entrust their wards in our care and we promise to give them a Good schooling that will enable them to compete globally, making them responsible citizens. 'KNOWLEDGE IS SUPREME POWER', has been the vocal slogan in and around, reminding us constantly that though every other power exists, the power which comes though Knowledge, can only INSPIRE, RENEW, REDEEM and ABHISHEK INTERNATIONAL SCHOOL, has put a step forward to materialise this beautiful belief into a possible reality, to satisfy the need of the expectant eyes, the hopeful hearts to encounter smoothly, surely and successfully the challenges of the competitive world, battling their way towards a new beginning , a renewal.`,
-  },
-  {
-    name: "Mrs. Sudha Bhat",
-    title: "Principal",
-    image: "/images/principal.jpeg",
-    message: `My vision is to foster a safe, inclusive, and dynamic learning environment where every student is encouraged to reach their full potential—academically, socially, and emotionally. I believe in cultivating a culture of respect, collaboration, and high expectations among students, staff, and families. By promoting innovative teaching, lifelong learning, and community involvement, we aim to prepare our students to become confident, compassionate, and responsible global citizens.`,
-  }
+  // {
+  //   name: "Mrs. Manisha Kasbe",
+  //   title: "Secretary",
+  //   image: "/images/secretary.jpg",
+  //   message: `Every Student deserves a Childhood full of enthusiasm and experimentation. This is a right time to allow them to expand their horizons and spread their wings. At AIS, every student is exposed to systematic extensive learning under the guidance of trained and perceptive educators so that they will develop a global outlook. The Abhishek International School will spare no efforts to make learning a joyful and sustainable activity for its students, making education a real celebration. The stress-free environment encourages each child to explore, experiment, and discover the world around them. As a Director, I welcome all parents to willingly entrust their wards in our care and we promise to give them a Good schooling that will enable them to compete globally, making them responsible citizens. 'KNOWLEDGE IS SUPREME POWER', has been the vocal slogan in and around, reminding us constantly that though every other power exists, the power which comes though Knowledge, can only INSPIRE, RENEW, REDEEM and ABHISHEK INTERNATIONAL SCHOOL, has put a step forward to materialise this beautiful belief into a possible reality, to satisfy the need of the expectant eyes, the hopeful hearts to encounter smoothly, surely and successfully the challenges of the competitive world, battling their way towards a new beginning , a renewal.`,
+  // },
+  // {
+  //   name: "Mrs. Sudha Bhat",
+  //   title: "Principal",
+  //   image: "/images/principal.jpeg",
+  //   message: `My vision is to foster a safe, inclusive, and dynamic learning environment where every student is encouraged to reach their full potential—academically, socially, and emotionally. I believe in cultivating a culture of respect, collaboration, and high expectations among students, staff, and families. By promoting innovative teaching, lifelong learning, and community involvement, we aim to prepare our students to become confident, compassionate, and responsible global citizens.`,
+  // }
 ];
 
 export default function ManagementPage() {
@@ -269,7 +269,7 @@ export default function ManagementPage() {
         <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-center items-center text-center px-4">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-              Our <span className="text-[#e9b1ff]">Leadership</span> Team
+              Our <span className="text-[#800000]">Leadership</span> Team
             </h1>
             <p className="text-white text-lg md:text-xl max-w-2xl mx-auto">
               Meet the visionary leaders guiding Abhishek International School towards excellence in education.
@@ -277,7 +277,7 @@ export default function ManagementPage() {
           </div>
         </div>
         <Image
-          src="/images/schoolbuilding.png"
+          src="/images/building.jpg"
           alt="School Building"
           fill
           className="object-cover"
@@ -289,10 +289,10 @@ export default function ManagementPage() {
         {/* Management Members Grid */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#4a148c] mb-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#800000] mb-3">
               Our Management Team
             </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#7b1fa2] to-[#e91e63] mx-auto rounded-full"></div>
+            <div className="w-20 h-1  to-[#e91e63] mx-auto rounded-full" style={{backgroundColor:'#800000'}}></div>
           </div>
 
           <div className="space-y-16">
@@ -309,11 +309,11 @@ export default function ManagementPage() {
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                       <h3 className="text-white text-xl font-bold">{member.name}</h3>
-                      <p className="text-[#e1bee7]">{member.title}</p>
+                      <p className="text-[#800000]">{member.title}</p>
                     </div>
                   </div>
                 </div>
@@ -322,8 +322,8 @@ export default function ManagementPage() {
                 <div className="w-full md:w-3/5">
                   <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 h-full">
                     <div className="flex items-center mb-4">
-                      <div className="h-1 w-10 bg-[#7b1fa2] mr-3"></div>
-                      <h3 className="text-xl font-semibold text-[#4a148c]">{member.title}</h3>
+                      <div className="h-1 w-10 bg-[##800000] mr-3"></div>
+                      <h3 className="text-xl font-semibold text-[#800000]">{member.title}</h3>
                     </div>
                     <div className="prose max-w-none text-gray-700">
                       <p className="whitespace-pre-line">{member.message}</p>
@@ -337,7 +337,10 @@ export default function ManagementPage() {
 
         {/* Mobile Carousel */}
         <section className="md:hidden mb-16">
-          <h3 className="text-2xl font-bold text-[#4a148c] mb-6 text-center">Meet Our Leaders</h3>
+           <h2 className="text-3xl md:text-4xl font-bold text-[#800000] mb-3">
+              Our Management Team
+            </h2>
+         
           <Carousel
             opts={{
               align: "start",
@@ -359,14 +362,14 @@ export default function ManagementPage() {
                         />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
                           <h3 className="text-white font-bold">{member.name}</h3>
-                          <p className="text-[#e1bee7] text-sm">{member.title}</p>
+                          <p className="text-[#800000] text-sm">{member.title}</p>
                         </div>
                       </div>
                       <CardContent className="p-4">
                         <p className="text-gray-700 text-sm line-clamp-4 mb-3">
                           {member.message}
                         </p>
-                        <button className="text-[#7b1fa2] text-sm font-medium hover:text-[#9c27b0] transition-colors flex items-center">
+                        <button className="text-[#800000] text-sm font-medium hover:text-[#9c27b0] transition-colors flex items-center">
                           Read full message
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -378,21 +381,21 @@ export default function ManagementPage() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-2 bg-white/90 hover:bg-white text-[#7b1fa2] border-none shadow-lg" />
-            <CarouselNext className="right-2 bg-white/90 hover:bg-white text-[#7b1fa2] border-none shadow-lg" />
+            <CarouselPrevious className="left-2 bg-white/90 hover:bg-white text-[rgb(128,0,0)] border-none shadow-lg" />
+            <CarouselNext className="right-2 bg-white/90 hover:bg-white text-[#800000] border-none shadow-lg" />
           </Carousel>
         </section>
 
         {/* Core Values */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#4a148c] mb-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#800000] mb-3">
               Our Leadership Values
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               The principles that guide our leadership and decision-making
             </p>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#7b1fa2] to-[#e91e63] mx-auto rounded-full mt-4"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-[##800000] to-[#e91e63] mx-auto rounded-full mt-4"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -436,12 +439,12 @@ export default function ManagementPage() {
             ].map((value, idx) => (
               <div 
                 key={idx} 
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#7b1fa2] hover:border-[#e91e63]"
+                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#800000] hover:border-[#e91e63]"
               >
-                <div className="w-14 h-14 bg-[#f3e5f5] rounded-full flex items-center justify-center mb-4">
+                <div className="w-14 h-14 bg-[#800000] rounded-full flex items-center justify-center mb-4">
                   {value.icon}
                 </div>
-                <h3 className="text-xl font-bold text-[#4a148c] mb-2">{value.title}</h3>
+                <h3 className="text-xl font-bold text-[#800000] mb-2">{value.title}</h3>
                 <p className="text-gray-600">{value.description}</p>
               </div>
             ))}

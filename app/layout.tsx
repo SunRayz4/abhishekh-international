@@ -2,7 +2,7 @@ import type React from "react"
 import "@/app/globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { ThemeProvider } from "@/components/theme-provider"
+import { ThemeProvider as NextThemeProvider } from "next-themes"
 
 // Update the metadata to include viewport settings
 export const metadata = {
@@ -20,13 +20,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-background font-sans antialiased">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
+        <NextThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <div className="relative flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>
-        </ThemeProvider>
+        </NextThemeProvider>
       </body>
     </html>
   )

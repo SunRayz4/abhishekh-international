@@ -10,7 +10,7 @@ interface FeatureCardProps {
 export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps) {
   return (
     <Card className="overflow-hidden border-none shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-      <CardHeader className="bg-gradient-to-r from-sky-500 to-purple-500 pb-2 pt-6 text-white">
+      <CardHeader className="bg-[#800000] pb-2 pt-6 text-white">
         <div className="mb-2 flex justify-center">
           <Icon className="h-10 w-10" />
         </div>

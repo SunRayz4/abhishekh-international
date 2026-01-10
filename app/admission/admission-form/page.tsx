@@ -1,194 +1,305 @@
+// 'use client'
+
+// import React, { useState } from 'react'
+
+// export default function AdmissionFormPage() {
+//   const [formData, setFormData] = useState({
+//     parentName: '',
+//     childName: '',
+//     currentSchool: '',
+//     mobileNumber: '',
+//     email: '',
+//     grade: '',
+//   })
+//   const [submitted, setSubmitted] = useState(false)
+
+//   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+//     setFormData({ ...formData, [e.target.name]: e.target.value })
+//   }
+
+//   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+//   e.preventDefault()
+
+//   try {
+//     const res = await fetch('/api/admission', {
+//       method: 'POST',
+//       headers: { 'Content-Type': 'application/json' },
+//       body: JSON.stringify(formData),
+//     })
+
+//     const result = await res.json()
+
+//     if (res.ok) {
+//       setSubmitted(true)
+//     } else {
+//       alert(result.error || 'Failed to submit form')
+//     }
+//   } catch (error) {
+//     console.error(error)
+//     alert('Error submitting form')
+//   }
+// }
+
+
+//   return (
+//     <div className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-red-50 to-pink-50 font-sans p-4">
+//       <form
+//         onSubmit={handleSubmit}
+//         className="bg-red-100 p-8 rounded-xl shadow-xl w-full max-w-3xl space-y-6"
+//       >
+//         {!submitted ? (
+//           <>
+//             {/* Header */}
+//             <h2 className="text-2xl font-bold text-center text-red-600 mb-4">
+//               Admission Open for 2026-27
+//             </h2>
+
+//             {/* Row: Parent Name & Child Name */}
+//             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+//               <div>
+//                 <label className="block font-medium mb-1 text-red-700">Parent Full Name *</label>
+//                 <input
+//                   type="text"
+//                   name="parentName"
+//                   value={formData.parentName}
+//                   onChange={handleChange}
+//                   required
+//                   className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200"
+//                   placeholder="Enter full name"
+//                 />
+//               </div>
+//               <div>
+//                 <label className="block font-medium mb-1 text-red-700">Child Full Name *</label>
+//                 <input
+//                   type="text"
+//                   name="childName"
+//                   value={formData.childName}
+//                   onChange={handleChange}
+//                   required
+//                   className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200"
+//                   placeholder="Enter full name"
+//                 />
+//               </div>
+//             </div>
+
+//             {/* Current School */}
+//             <div>
+//               <label className="block font-medium mb-1 text-red-700">Current School Name *</label>
+//               <input
+//                 type="text"
+//                 name="currentSchool"
+//                 value={formData.currentSchool}
+//                 onChange={handleChange}
+//                 required
+//                 className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200"
+//                 placeholder="Enter full school name"
+//               />
+//             </div>
+
+//             {/* Row: Mobile & Email */}
+//             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+//               <div>
+//                 <label className="block font-medium mb-1 text-red-700">Mobile Number *</label>
+//                 <input
+//                   type="tel"
+//                   name="mobileNumber"
+//                   value={formData.mobileNumber}
+//                   onChange={handleChange}
+//                   required
+//                   className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200"
+//                   placeholder="Enter mobile number"
+//                 />
+//               </div>
+//               <div>
+//                 <label className="block font-medium mb-1 text-red-700">Email *</label>
+//                 <input
+//                   type="email"
+//                   name="email"
+//                   value={formData.email}
+//                   onChange={handleChange}
+//                   required
+//                   className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200"
+//                   placeholder="Enter email"
+//                 />
+//               </div>
+//             </div>
+
+//             {/* Grade Selection */}
+//             <div>
+//               <label className="block font-medium mb-1 text-red-700">Grade Applying For *</label>
+//               <select
+//                 name="grade"
+//                 value={formData.grade}
+//                 onChange={handleChange}
+//                 required
+//                 className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200"
+//               >
+//                 <option value="">Select Grade</option>
+//                 <option>Kindergarten</option>
+//                 <option>Grade 1</option>
+//                 <option>Grade 2</option>
+//                 <option>Grade 3</option>
+//                 <option>Grade 4</option>
+//                 <option>Grade 5</option>
+//                 <option>Grade 6</option>
+//                 <option>Grade 7</option>
+//                 <option>Grade 8</option>
+//                 <option>Grade 9</option>
+//                 <option>Grade 10</option>
+//                 <option>Grade 11</option>
+//                 <option>Grade 12</option>
+//               </select>
+//             </div>
+
+//             {/* Submit */}
+//             <button
+//               type="submit"
+//               className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition"
+//             >
+//               Submit Enquiry
+//             </button>
+//           </>
+//         ) : (
+//           <div className="text-center space-y-4">
+//             <h3 className="text-xl font-bold text-red-700">
+//               Thank You for Your Enquiry!
+//             </h3>
+//             <p className="text-red-800">
+//               Our school team will get back to you shortly. For immediate information, please call us or visit:
+//             </p>
+//             <div className="text-left text-red-900">
+//               <p className="font-semibold">Abhishek International School</p>
+//               <p>Plot No.2, Sector No.6,</p>
+//               <p>Moshi Pradhikaran, PCNTDA,</p>
+//               <p>Pune-412105</p>
+//               <p>📞 +91 84467 13030</p>
+//               <p>✉️ abhishekinternational.cbse@gmail.com</p>
+//             </div>
+//             <button
+//               onClick={() => setSubmitted(false)}
+//               className="mt-4 bg-red-600 text-white py-2 px-6 rounded-lg font-semibold hover:bg-red-700 transition"
+//             >
+//               Submit Another Enquiry
+//             </button>
+//           </div>
+//         )}
+//       </form>
+//     </div>
+//   )
+// }
+
+
+
+
 'use client'
 
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
-import { FaUserGraduate, FaUserTie, FaHome } from 'react-icons/fa'
 
 export default function AdmissionFormPage() {
   const [formData, setFormData] = useState({
-    fullName: '',
-    dateOfBirth: '',
-    age: '',
-    gender: '',
-    classSeeking: '',
     parentName: '',
-    contact: '',
+    childName: '',
+    currentSchool: '',
+    mobileNumber: '',
     email: '',
-    address: '',
-    message: '',
+    grade: '',
   })
+  const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    alert('Admission form submitted successfully!')
+
+    try {
+      const res = await fetch('/api/admission', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await res.json()
+
+      if (res.ok) {
+        setSubmitted(true)
+      } else {
+        alert(result.error || 'Failed to submit form')
+      }
+    } catch (error) {
+      console.error(error)
+      alert('Error submitting form')
+    }
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-tr from-purple-50 to-sky-50 py-16 px-4 font-serif">
-      <motion.div
-        className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-10 border border-[#e1bee7]"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-      >
-        <h1 className="text-4xl font-bold text-center text-[#6a1b9a] mb-10">Admission Form</h1>
-
-        <form onSubmit={handleSubmit} className="space-y-12">
-          {/* Student Info */}
-          <div>
-            <div className="flex items-center gap-2 text-[#6a1b9a] text-xl font-semibold mb-4">
-              <FaUserGraduate />
-              Student Information
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-red-50 to-pink-50 font-sans p-4">
+      <form onSubmit={handleSubmit} className="bg-red-100 p-8 rounded-xl shadow-xl w-full max-w-3xl space-y-6">
+        {!submitted ? (
+          <>
+            <h2 className="text-2xl font-bold text-center text-red-600 mb-4">Admission Open for 2026-27</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block font-medium mb-1">Full Name</label>
-                <input
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2 focus:ring-2 focus:ring-purple-300"
-                />
+                <label className="block font-medium mb-1 text-red-700">Parent Full Name *</label>
+                <input type="text" name="parentName" value={formData.parentName} onChange={handleChange} required className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200" placeholder="Enter full name"/>
               </div>
               <div>
-                <label className="block font-medium mb-1">Date of Birth</label>
-                <input
-                  type="date"
-                  name="dateOfBirth"
-                  value={formData.dateOfBirth}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2"
-                />
-              </div>
-              <div>
-                <label className="block font-medium mb-1">Age</label>
-                <input
-                  type="number"
-                  name="age"
-                  value={formData.age}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2"
-                />
-              </div>
-              <div>
-                <label className="block font-medium mb-1">Gender</label>
-                <select
-                  name="gender"
-                  value={formData.gender}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2"
-                >
-                  <option value="">Select</option>
-                  <option>Male</option>
-                  <option>Female</option>
-                  <option>Other</option>
-                </select>
-              </div>
-              <div className="md:col-span-2">
-                <label className="block font-medium mb-1">Class Seeking Admission For</label>
-                <input
-                  name="classSeeking"
-                  value={formData.classSeeking}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2"
-                />
+                <label className="block font-medium mb-1 text-red-700">Child Full Name *</label>
+                <input type="text" name="childName" value={formData.childName} onChange={handleChange} required className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200" placeholder="Enter full name"/>
               </div>
             </div>
+            <div>
+              <label className="block font-medium mb-1 text-red-700">Current School Name *</label>
+              <input type="text" name="currentSchool" value={formData.currentSchool} onChange={handleChange} required className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200" placeholder="Enter full school name"/>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block font-medium mb-1 text-red-700">Mobile Number *</label>
+                <input type="tel" name="mobileNumber" value={formData.mobileNumber} onChange={handleChange} required className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200" placeholder="Enter mobile number"/>
+              </div>
+              <div>
+                <label className="block font-medium mb-1 text-red-700">Email *</label>
+                <input type="email" name="email" value={formData.email} onChange={handleChange} required className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200" placeholder="Enter email"/>
+              </div>
+            </div>
+            <div>
+              <label className="block font-medium mb-1 text-red-700">Grade Applying For *</label>
+              <select name="grade" value={formData.grade} onChange={handleChange} required className="w-full border border-red-300 rounded-md px-4 py-2 focus:ring-2 focus:ring-red-200">
+                <option value="">Select Grade</option>
+                <option>Kindergarten</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+              </select>
+            </div>
+            <button type="submit" className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">Submit Enquiry</button>
+          </>
+        ) : (
+          <div className="text-center space-y-4">
+            <h3 className="text-xl font-bold text-red-700">Thank You for Your Enquiry!</h3>
+            <p className="text-red-800">Our school team will get back to you shortly. For immediate information, please call us or visit:</p>
+            <div className="text-left text-red-900">
+              <p className="font-semibold">Abhishek International School</p>
+              <p>Plot No.2, Sector No.6,</p>
+              <p>Moshi Pradhikaran, PCNTDA,</p>
+              <p>Pune-412105</p>
+              <p>📞 +91 84467 13030</p>
+              <p>✉️ abhishekinternational.cbse@gmail.com</p>
+            </div>
+            <button onClick={() => setSubmitted(false)} className="mt-4 bg-red-600 text-white py-2 px-6 rounded-lg font-semibold hover:bg-red-700 transition">Submit Another Enquiry</button>
           </div>
-
-          {/* Parent Info */}
-          <div>
-            <div className="flex items-center gap-2 text-[#6a1b9a] text-xl font-semibold mb-4">
-              <FaUserTie />
-              Parent / Guardian Details
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label className="block font-medium mb-1">Parent Name</label>
-                <input
-                  name="parentName"
-                  value={formData.parentName}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2"
-                />
-              </div>
-              <div>
-                <label className="block font-medium mb-1">Contact Number</label>
-                <input
-                  type="tel"
-                  name="contact"
-                  value={formData.contact}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2"
-                />
-              </div>
-              <div className="md:col-span-2">
-                <label className="block font-medium mb-1">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full border rounded-md px-4 py-2"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Address & Notes */}
-          <div>
-            <div className="flex items-center gap-2 text-[#6a1b9a] text-xl font-semibold mb-4">
-              <FaHome />
-              Address & Additional Info
-            </div>
-            <div className="grid grid-cols-1 gap-6">
-              <div>
-                <label className="block font-medium mb-1">Residential Address</label>
-                <textarea
-                  name="address"
-                  value={formData.address}
-                  onChange={handleChange}
-                  required
-                  rows={3}
-                  className="w-full border rounded-md px-4 py-2"
-                />
-              </div>
-              <div>
-                <label className="block font-medium mb-1">Message / Note</label>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={3}
-                  className="w-full border rounded-md px-4 py-2"
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Submit */}
-          <div className="text-center pt-6">
-            <button
-              type="submit"
-              className="bg-[#6a1b9a] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#8e24aa] transition"
-            >
-              Submit Admission Form
-            </button>
-          </div>
-        </form>
-      </motion.div>
+        )}
+      </form>
     </div>
   )
 }

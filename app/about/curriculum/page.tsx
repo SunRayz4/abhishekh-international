@@ -283,10 +283,10 @@ export default function CurriculumPage() {
       <div className="container mx-auto px-4 py-12">
         {/* Header */}
        <div className="container mx-auto px-4 py-20 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-800" style={{color:'#6a1b9a'}}>Curriculum</h1>
-        <div className="mb-8 h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full"></div>
+        <h1 className="mb-4 text-4xl font-bold text-800" style={{color:'#800000'}}>Curriculum</h1>
+        <div className="mb-8 h-1 w-24 bg-[#800000] mx-auto rounded-full"></div>
       
-          <p className="text-xl text-[#6a1b9a] font-medium">
+          <p className="text-xl text-[#800000] font-medium">
             Future leaders through futuristic curriculum
           </p>
         </div>
@@ -298,7 +298,7 @@ export default function CurriculumPage() {
             <p className="text-gray-700 mb-4">
               Our school follows the CBSE curriculum and use the NCERT books as prescribed by the CBSE.
             </p>
-            <p className="text-[#6a1b9a] font-medium">
+            <p className="text-[#800000] font-medium">
               Link:{" "}
               <a 
                 href="https://abhishekinternational.org.in" 
@@ -311,7 +311,7 @@ export default function CurriculumPage() {
 
             </p>
              <p className="text-gray-700">
-              We refer to the Uniform System of Assessment and have Report cards for Grade I to Grade IX from academic year 2022-23 onwards. It Is mentioned in the school diary as well as on the CBSE website.
+              We refer to the Uniform System of Assessment and have Report cards for Nursery to Grade X from academic year 2022-23 onwards. It Is mentioned in the school diary as well as on the CBSE website.
             </p>
              <p className="text-gray-700 mb-4">
               The syllabus is designed in such a way that every child should develop the love for learning.
@@ -338,7 +338,7 @@ export default function CurriculumPage() {
 
           {/* Primary/Secondary */}
           <div className="bg-white rounded-xl shadow-md p-8 mb-8 border border-[#f3e5f5]">
-            <h3 className="text-2xl font-bold text-[#6a1b9a] mb-4">PRIMARY / SECONDARY (I To IX)</h3>
+            <h3 className="text-2xl font-bold text-[#800000] mb-4">PRIMARY / SECONDARY (Nursery to Grade X)</h3>
             <p className="text-gray-700">
               The primary school program develops children's competence in various skills like reading, writing, listening, speaking for language enhancement along with many audio visual activities to get fluency and confidence in expression and speaking fluency, solving to encourage inquiry and exploration long with use of information and technology, the wide range of curricular and co-curricular opportunities offered help in overall development of each and every child it also focuses on values ,behavior, manners and discipline, regular activities like oratory Skills. Skit and drama improves their communication, ability to express themselves in addition to developing their pragmatic skills
             </p>
@@ -346,7 +346,7 @@ export default function CurriculumPage() {
 
           {/* Secondary Program */}
           <div className="bg-white rounded-xl shadow-md p-8 border border-[#f3e5f5]">
-            <h3 className="text-2xl font-bold text-[#6a1b9a] mb-4">SECONDARY SCHOOL PROGRAMME</h3>
+            <h3 className="text-2xl font-bold text-[#800000] mb-4">SECONDARY SCHOOL PROGRAMME</h3>
             <p className="text-gray-700">
               The Secondary School program is structured to meet the Students varied intellectual skills and development needs through Continuous Evaluation and day to day progress and changes. Main aim of this program is developing skills related to writing, reading, speaking critical thinking, stages courage, fostering values and etiquettes, It thus develops curiosity among them, scientific ways logics sense of belongingness and love for the Nation. They learn, they adopt competitive vision , importance of discipline, punctuality responsibilities to words the society, Through dramas and skits they study about great personalities so that they can choose the right path in life .they learn to take initiative in most of the activities to acquire towards the knowledge and learn Various life skills towards the Art of living.
             </p>

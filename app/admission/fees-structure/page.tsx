@@ -153,15 +153,15 @@ export default function FeeStructurePage() {
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <div className="inline-flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-2 rounded-full mb-4">
+        <div className="inline-flex items-center justify-center bg-[#800000]  text-white px-6 py-2 rounded-full mb-4">
           <CalendarDays className="mr-2" size={18} />
           <span className="text-sm font-medium">2025–2026 Academic Year</span>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-purple-800 mb-3">
-          School <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">Fee Structure</span>
+        <h1 className="text-4xl md:text-5xl font-bold text-[#800000] mb-3">
+          School <span className="bg-[#800000] to-pink-500 bg-clip-text text-transparent">Fee Structure</span>
         </h1>
-        <div className="h-1.5 w-28 bg-gradient-to-r from-purple-500 to-pink-400 mx-auto rounded-full mb-4"></div>
-        <p className="text-lg text-purple-600 max-w-2xl mx-auto">
+        <div className="h-1.5 w-28 bg-[#800000] mx-auto rounded-full mb-4"></div>
+        <p className="text-[#800000] max-w-2xl mx-auto">
           Transparent pricing for new and existing students
         </p>
       </motion.div>
@@ -175,7 +175,7 @@ export default function FeeStructurePage() {
       >
         <div className="overflow-hidden rounded-2xl shadow-lg border border-purple-100">
           <table className="w-full">
-            <thead className="bg-gradient-to-r from-purple-700 to-purple-500 text-white">
+            <thead className="bg-[#800000] text-white">
               <tr>
                 <th className="p-4 text-left font-semibold">
                   <div className="flex items-center">
@@ -204,7 +204,7 @@ export default function FeeStructurePage() {
                   whileHover={{ scale: 1.01 }}
                   className="hover:bg-purple-50 transition"
                 >
-                  <td className="p-4 font-medium text-purple-900">
+                  <td className="p-4 font-medium text-[#800000">
                     {item.class}
                   </td>
                   <td className="p-4 text-right font-medium text-gray-800">
@@ -229,14 +229,14 @@ export default function FeeStructurePage() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="bg-white rounded-xl shadow-md overflow-hidden border border-purple-100"
         >
-          <div className="bg-gradient-to-r from-purple-600 to-purple-400 p-4 flex items-center">
+          <div className="bg-[#800000] p-4 flex items-center">
             <Info className="text-white mr-2" size={20} />
             <h3 className="text-lg font-semibold text-white">Important Notes</h3>
           </div>
           <div className="p-5">
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-purple-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -244,7 +244,7 @@ export default function FeeStructurePage() {
                 <span>Fee includes academic and activity charges</span>
               </li>
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-purple-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -252,7 +252,7 @@ export default function FeeStructurePage() {
                 <span>Books, transport, and uniforms are charged separately</span>
               </li>
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-purple-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -260,7 +260,7 @@ export default function FeeStructurePage() {
                 <span>New admissions include a one-time registration fee</span>
               </li>
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-purple-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -278,14 +278,14 @@ export default function FeeStructurePage() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="bg-white rounded-xl shadow-md overflow-hidden border border-purple-100"
         >
-          <div className="bg-gradient-to-r from-pink-600 to-pink-400 p-4 flex items-center">
+          <div className="bg-[#800000] p-4 flex items-center">
             <BookOpenCheck className="text-white mr-2" size={20} />
             <h3 className="text-lg font-semibold text-white">Payment Information</h3>
           </div>
           <div className="p-5">
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-pink-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -293,7 +293,7 @@ export default function FeeStructurePage() {
                 <span>Payments accepted via bank transfer or school office</span>
               </li>
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-pink-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -301,7 +301,7 @@ export default function FeeStructurePage() {
                 <span>Installment plans available upon request</span>
               </li>
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-pink-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -309,7 +309,7 @@ export default function FeeStructurePage() {
                 <span>5% discount for annual fee payment</span>
               </li>
               <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 text-pink-500 mr-2 mt-0.5">
+                <div className="flex-shrink-0 h-5 w-5 text-[#800000] mr-2 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -328,44 +328,44 @@ export default function FeeStructurePage() {
         transition={{ duration: 0.6, delay: 0.8 }}
         className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden border border-purple-100"
       >
-        <div className="bg-gradient-to-r from-indigo-600 to-indigo-400 p-4 flex items-center">
+        <div className="bg-[#800000] p-4 flex items-center">
           <Clock className="text-white mr-2" size={20} />
           <h3 className="text-lg font-semibold text-white">School Timings</h3>
         </div>
         <div className="p-6">
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-lg font-semibold text-purple-800 mb-3 flex items-center">
-                <span className="bg-purple-100 p-2 rounded-full mr-3">
-                  <School className="text-purple-600" size={18} />
+              <h4 className="text-lg font-semibold text-[#800000] mb-3 flex items-center">
+                <span className="bg-[#800000] p-2 rounded-full mr-3">
+                  <School className="text-[#800000" size={18} />
                 </span>
                 Student Timings
               </h4>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 rounded-full bg-purple-500 mr-2"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-[#800000] mr-2"></span>
                   <strong>Monday to Friday:</strong> 8:45 AM – 3:00 PM
                 </li>
                 <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 rounded-full bg-purple-500 mr-2"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-[#800000] mr-2"></span>
                   <strong>Saturday:</strong> 8:45 AM – 12:00 Noon
                 </li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-semibold text-indigo-800 mb-3 flex items-center">
+              <h4 className="text-lg font-semibold text-[#800000] mb-3 flex items-center">
                 <span className="bg-indigo-100 p-2 rounded-full mr-3">
-                  <CalendarDays className="text-indigo-600" size={18} />
+                  <CalendarDays className="text-[#800000" size={18} />
                 </span>
                 Office Timings
               </h4>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 rounded-full bg-indigo-500 mr-2"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-[#800000] mr-2"></span>
                   <strong>Monday to Friday:</strong> 8:30 AM – 3:00 PM
                 </li>
                 <li className="flex items-center">
-                  <span className="inline-block w-2 h-2 rounded-full bg-indigo-500 mr-2"></span>
+                  <span className="inline-block w-2 h-2 rounded-full bg-[#800000] mr-2"></span>
                   <strong>Saturday:</strong> 8:30 AM – 1:00 PM
                 </li>
               </ul>

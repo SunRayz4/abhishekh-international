@@ -11,9 +11,9 @@ export default function AboutPage() {
         <div className="absolute  z-0"></div>
         <div className="container mx-auto px-4 py-32 relative z-10 text-center">
           <h2 className="mb-4 text-3xl font-bold sm:text-4xl text-gray-800">
-            About <span className="text-[#8e24aa]">Abhishek International</span>
+            About <span className="text-[#800000]">Abhishek International</span>
           </h2>
-          <div className="mb-8 h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full"></div>
+          <div className="mb-8 h-1 w-24 bg-[#800000] mx-auto rounded-full"></div>
         
         </div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent z-10"></div>
@@ -24,9 +24,9 @@ export default function AboutPage() {
         <div className="bg-white rounded-xl shadow-2xl p-6 md:p-10">
           <div className="grid gap-12 md:grid-cols-2 items-center">
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-lg transform transition duration-500 hover:shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-t from-[#6a1b9a]/50 to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#800000]/50 to-transparent z-10"></div>
               <Image 
-                src="/images/schoolbuilding.png" 
+                src="/images/building.jpg" 
                 alt="Abhishek International School Campus" 
                 fill 
                 className="object-cover transition duration-700 hover:scale-105" 
@@ -35,20 +35,22 @@ export default function AboutPage() {
             </div>
             <div className="py-4">
               <div className="inline-block mb-5 px-3 py-1 bg-[#6a1b9a]/10 rounded-full">
-                <span className="text-sm font-medium text-[#6a1b9a]">Our Journey</span>
+                <span className="text-sm font-medium text-[#800000]">Our Journey</span>
               </div>
               <h2 className="mb-6 text-3xl font-bold text-gray-800">
-                Building Futures Since 2005
+               Contributing in Education Field Since 2004
               </h2>
               <div className="space-y-5 text-gray-700">
                 <p className="leading-relaxed">
-                  Abhishek International School is run by the trust - 'Abhishek Vidyalam's. The pioneers of this trust - Chairman - Mr Gururaj Charantimath, Vice Chairman - Mr. Suresh Kasbe, Director - Mrs. Geeta Charantimath, Secretary - Mrs. Manisha Kasbe - have been in the educational field for the last 10 years.
+                  Abhishek International School is run by the trust Abhishek Vidyalayam, a renowned institution dedicated to providing quality education. The pioneer of this trust, Chairman Mr. Gururaj Charantimath, and Executive Director Mrs. Geeta Charantimath, have been in the education sector for over twenty years, bringing a wealth of experience and expertise to the table.
                 </p>
                 <p className="leading-relaxed">
-                  Our extensive one-acre campus in Moshi provides a serene, pollution-free environment ideal for systematic learning. The academic year 2015-16 marked our first year in this beautiful campus with permission from the Maharashtra Government to run up to Secondary section.
+                 Our extensive one-acre campus provides a serene and ideal environment for systematic learning, allowing students to grow and develop in a peaceful and supportive setting.
+
+Established in 2014, Abhishek International School has rapidly grown into a reputable CBSE school, offering classes from Nursery to Standard 10.
                 </p>
                 <p className="leading-relaxed">
-                  We currently have classes from Nursery to STD X, with plans to grow organically by adding one standard each year. This approach allows us to focus on nurturing each student's unique strengths while transforming weaknesses into opportunities for growth.
+                  Our focus is on nurturing each child, recognizing their unique strengths, and transforming weaknesses into opportunities for growth. We strive to create a holistic learning experience that not only imparts academic knowledge but also helps students develop essential life skills, values, and character. Our ultimate goal is to shape better citizens for our country, who are equipped to make a positive impact in the world.
                 </p>
               </div>
             </div>
@@ -88,7 +90,7 @@ export default function AboutPage() {
 
               </div>
               <CardContent className="pt-6 pb-8 px-6">
-                <h3 className="text-xl font-semibold text-[#6a1b9a] mb-4">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-[#800000] mb-4">{item.title}</h3>
                 <p className="text-gray-700">{item.desc}</p>
               </CardContent>
             </Card>

@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { SubNavHeader } from "@/components/sub-nav-header"
 import { useState } from "react"
+import Link from "next/link"
 
 const extraCurricularNavItems = [
   { title: "Sports", href: "/extra-curricular/sports" },
@@ -45,9 +46,27 @@ export default function ExtraActivityPage() {
     <div className="min-h-screen bg-gradient-to-br from-[#f9f6fb] to-white font-serif">
      
 
+
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold text-[#6a1b9a] mb-4 text-center">Extra Activity</h1>
-        <div className="h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full mb-10"></div>
+        <Link href="/" className="text-[#800000] text-lg font-semibold flex items-center gap-2 mb-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M11 19l-7-7 7-7M5 12h14"
+            />
+          </svg>
+          Back to Home
+        </Link>
+        <h1 className="text-4xl font-bold text-[#800000] mb-4 text-center">Extra Activity</h1>
+        <div className="h-1 w-24 bg-gradient-to-r from-[#800000] to-[#800000] mx-auto rounded-full mb-10"></div>
 
         <div className="flex flex-col md:flex-row gap-8">
           {/* Sidebar Filters */}
@@ -59,8 +78,8 @@ export default function ExtraActivityPage() {
                   onClick={() => setActiveFilter(filter)}
                   className={`w-full text-left px-4 py-2 rounded-md border ${
                     activeFilter === filter
-                      ? "bg-[#d1c4e9] text-[#6a1b9a] font-semibold"
-                      : "bg-white hover:bg-[#f3e5f5] text-gray-800"
+                      ? "bg-[#d1c4e9] text-[#800000] font-semibold"
+                      : "bg-white hover:bg-[#f3e5f5] text-[#800000]"
                   }`}
                 >
                   {filter}

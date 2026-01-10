@@ -16,8 +16,8 @@ export default function VisionMissionPage() {
 
       {/* Title */}
       <div className="container mx-auto px-4 py-20 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-800" style={{color:'#6a1b9a'}}>Vision & Mission</h1>
-        <div className="mb-8 h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full"></div>
+        <h1 className="mb-4 text-4xl font-bold text-800" style={{color:'#800000'}}>Vision & Mission</h1>
+        <div className="mb-8 h-1 w-24 bg-gradient-to-r from-[#800000] mx-auto rounded-full"></div>
       </div>
 
     {/* Vision & Mission Side by Side */}
@@ -28,12 +28,12 @@ export default function VisionMissionPage() {
     <div className="flex-1 bg-white shadow-xl rounded-xl p-8 border border-[#e1bee7] text-center">
       <div className="flex justify-center mb-4">
         <div className="bg-gradient-to-br from-[#e1bee7] to-[#f3e5f5] p-4 rounded-full shadow-md">
-          <svg className="w-8 h-8 text-[#6a1b9a]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <svg className="w-8 h-8 text-[#800000]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
             <path d="M12 8c1.38 0 2.5-1.12 2.5-2.5S13.38 3 12 3s-2.5 1.12-2.5 2.5S10.62 8 12 8zM12 10v10M7 20h10" />
           </svg>
         </div>
       </div>
-      <h2 className="text-2xl font-bold text-[#6a1b9a] mb-3">Our Vision</h2>
+      <h2 className="text-2xl font-bold text-[#800000] mb-3">Our Vision</h2>
       <p className="text-gray-700 leading-relaxed">
         “Look not from the mind, but from the soul, for the life that is coming is already before us,
         waiting to open up the world. Just look more closely, find the eyes to see.”
@@ -44,12 +44,12 @@ export default function VisionMissionPage() {
     <div className="flex-1 bg-white shadow-xl rounded-xl p-8 border border-[#e1bee7] text-center">
       <div className="flex justify-center mb-4">
         <div className="bg-gradient-to-br from-[#e1bee7] to-[#f3e5f5] p-4 rounded-full shadow-md">
-          <svg className="w-8 h-8 text-[#6a1b9a]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <svg className="w-8 h-8 text-[#800000]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
             <path d="M12 6v6l4 2m4 2a9 9 0 11-8-9" />
           </svg>
         </div>
       </div>
-      <h2 className="text-2xl font-bold text-[#6a1b9a] mb-3">Our Mission</h2>
+      <h2 className="text-2xl font-bold text-[#800000] mb-3">Our Mission</h2>
       <p className="text-gray-700 leading-relaxed">
         “Education enriches life to a unique perspective of within and without.”
       </p>
@@ -60,8 +60,8 @@ export default function VisionMissionPage() {
 
       {/* Core Values */}
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center text-[#6a1b9a] mb-4">Core Values</h2>
-        <div className="h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full mb-10"></div>
+        <h2 className="text-3xl font-bold text-center text-[#800000] mb-4">Core Values</h2>
+        <div className="h-1 w-24 bg-[#800000] mx-auto rounded-full mb-10"></div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {[
             "Attitude before knowledge",
@@ -73,7 +73,7 @@ export default function VisionMissionPage() {
           ].map((value, idx) => (
             <Card key={idx} className="shadow-lg hover:shadow-xl transition">
               <CardContent className="p-6 text-center">
-                <h3 className="text-lg font-semibold text-[#6a1b9a]">{value}</h3>
+                <h3 className="text-lg font-semibold text-[#800000]">{value}</h3>
               </CardContent>
             </Card>
           ))}
@@ -82,8 +82,8 @@ export default function VisionMissionPage() {
 
       {/* How Do We Do This */}
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center text-[#6a1b9a] mb-4">"How Do We Do This?"</h2>
-        <div className="h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full mb-8"></div>
+        <h2 className="text-3xl font-bold text-center text-[#800000] mb-4">"How Do We Do This?"</h2>
+        <div className="h-1 w-24 bg-gradient-[#800000] mx-auto rounded-full mb-8"></div>
         <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-relaxed max-w-3xl mx-auto">
           <li>We make learning a passion through which several discoveries happen and success follows our path.</li>
           <li>We provide the child-oriented syllabus.</li>
@@ -95,8 +95,8 @@ export default function VisionMissionPage() {
 
       {/* Aims & Objectives */}
       <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold text-center text-[#6a1b9a] mb-4">Aims and Objectives</h2>
-        <div className="h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full mb-8"></div>
+        <h2 className="text-3xl font-bold text-center text-[#800000] mb-4">Aims and Objectives</h2>
+        <div className="h-1 w-24 bg-[#800000] mx-auto rounded-full mb-8"></div>
         <ul className="list-disc pl-6 space-y-3 text-gray-700 leading-relaxed max-w-3xl mx-auto">
           <li>To develop a child’s physical, mental, emotional and spiritual growth.</li>
           <li>To develop a feeling of self-respect and love for oneself and surroundings.</li>

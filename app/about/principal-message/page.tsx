@@ -96,10 +96,10 @@ export default function PrincipalMessagePage() {
       <div className="container mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="mb-12 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-[#6a1b9a]">
-            Principal's <span className="text-[#ab47bc]">Message</span>
+          <h1 className="mb-4 text-4xl font-bold text-[#800000]">
+            Principal's <span className="text-[#800000]">Message</span>
           </h1>
-          <div className="h-1 w-24 bg-gradient-to-r from-[#6a1b9a] to-[#ab47bc] mx-auto rounded-full"></div>
+          <div className="h-1 w-24 bg-[#800000] mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-20">
@@ -108,15 +108,15 @@ export default function PrincipalMessagePage() {
             <div className="sticky top-24">
               <div className="relative h-[350px] w-full overflow-hidden rounded-xl shadow-xl border-4 border-white transform hover:scale-[1.01] transition-transform duration-300">
                 <Image
-                  src="/images/principal.jpeg"
+                  src="/images/principal1.jpg"
                   alt="Mrs. Sudha Bhat"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   priority
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h2 className="text-white text-xl font-bold">Mrs. Sudha Bhat</h2>
-                  <p className="text-[#e1bee7]">Principal</p>
+                  <p className="text-[#800000]">Principal</p>
                 </div>
               </div>
             </div>
@@ -126,8 +126,8 @@ export default function PrincipalMessagePage() {
           <div className="md:col-span-2">
             <div className="bg-white rounded-xl shadow-lg p-8 md:p-10">
               {/* Quote */}
-              <div className="mb-8 p-6 bg-[#f3e5f5] rounded-lg border-l-4 border-[#ab47bc]">
-                <p className="text-xl italic text-[#6a1b9a]">
+              <div className="mb-8 p-6 bg-[] rounded-lg border-l-4 border-[#800000]">
+                <p className="text-xl italic text-[#800000]">
                   "Education is not the filling of a pail, but the lighting of a fire."
                 </p>
               </div>
@@ -135,7 +135,7 @@ export default function PrincipalMessagePage() {
               {/* Message Content */}
               <div className="prose max-w-none text-gray-700 space-y-6">
                 <p className="text-lg">
-                  <span className="font-bold text-[#6a1b9a]">Dear Parents and Students,</span>
+                  <span className="font-bold text-[#800000]">Dear Parents and Students,</span>
                 </p>
 
                 <p className="text-gray-800 leading-relaxed">
@@ -148,9 +148,9 @@ export default function PrincipalMessagePage() {
 
                 <div className="mt-8">
                   <p className="mb-2">Warm regards,</p>
-                  <div className="border-t border-[#e1bee7] pt-4">
-                    <p className="font-bold text-[#6a1b9a] text-lg">Mrs. Sudha Bhat</p>
-                    <p className="text-[#ab47bc]">Principal</p>
+                  <div className="border-t border-[black] pt-4">
+                    <p className="font-bold text-[#] text-l#800000g">Mrs. Sudha Bhat</p>
+                    <p className="text-[#800000]">Principal</p>
                   </div>
                 </div>
               </div>

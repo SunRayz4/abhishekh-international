@@ -66,7 +66,7 @@ export function EnquiryForm() {
       }}
       className="relative z-10"
     >
-      <Card className="shadow-lg border-t-4 border-[#8e24aa] bg-white/90 rounded-lg backdrop-blur-md">
+      <Card className="shadow-lg border-t-4 border-[#800000] bg-white/90 rounded-lg backdrop-blur-md">
         <CardHeader className="text-white rounded-t-lg pb-3 font-serif" style={{ backgroundColor: "#8e24aa" }}>
           <CardTitle className="text-xl text-center flex items-center justify-center">
             <BookOpen className="mr-2 h-5 w-5" />
@@ -154,7 +154,7 @@ export function EnquiryForm() {
             <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#6a1b9a] via-[#8e24aa] to-[#ab47bc] text-white hover:from-[#5e1789] hover:to-[#9c1fb4] transition-all duration-300 font-serif rounded-md py-2"
+                className="w-full bg-[#800000] text-white hover:from-[#5e1789] hover:to-[#9c1fb4] transition-all duration-300 font-serif rounded-md py-2"
               >
                 Submit Enquiry
               </Button>
