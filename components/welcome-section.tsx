@@ -68,7 +68,14 @@ export function WelcomeSection() {
               asChild
               className="bg-[#800000] text-white font-serif"
             >
-              <Link href="/admission">Apply for Admission</Link>
+             <Link 
+  href="https://abhishekmoshi.sunrayztechnology.com/OnlineEnquiry.aspx" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  Apply for Admission
+</Link>
+
             </Button>
 
             <Button

@@ -108,8 +108,7 @@ export function Navbar() {
   // ✅ Add images and current index inside component
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    `${process.env.NEXT_PUBLIC_STATIC_ASSETS}/img/admissionopen.jpg`,
-    "/images/popimage.jpg",
+    `${process.env.NEXT_PUBLIC_STATIC_ASSETS}/img/admissionopen.jpeg`,
   ];
 
   // Close dropdown when clicking outside
