@@ -239,7 +239,7 @@ export default function GalleryPage() {
 
         {/* ================= FILTER BUTTONS ================= */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
-          <button
+          {/* <button
             onClick={() => setActiveFilter("All")}
             className={`px-4 py-2 rounded-full text-sm font-semibold transition-all
               ${
@@ -249,7 +249,7 @@ export default function GalleryPage() {
               }`}
           >
             All
-          </button>
+          </button> */}
 
           {topFilterOrder.map((filter) => (
             <button

@@ -73,6 +73,7 @@ const navItems = [
     { title: "Academic Planner", href: "/pdf/Annual Calendar 2025-26.pdf", target: "_blank" },
     { title: "Programmes", href: "/academics/programs" },
     { title: "Teaching Methodology", href: "/academics/teaching-methodology" },
+     { title: "Annual Report-2025-26", href: "/academics/annualreport" },
    
   ],
 },

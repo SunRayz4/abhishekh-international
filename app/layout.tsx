@@ -3,6 +3,7 @@ import "@/app/globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ThemeProvider as NextThemeProvider } from "next-themes"
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Update the metadata to include viewport settings
 export const metadata = {

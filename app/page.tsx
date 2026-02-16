@@ -434,6 +434,23 @@ export default function Home() {
 
   const testimonials = [
     {
+  quote: `The school is well updated and has a highly qualified and dedicated staff who handle children with great care and understanding. Both the teaching and non-teaching faculty are extremely helpful, supportive, and approachable. The teachers are very well trained and have an excellent understanding of students’ learning needs.
+
+The school has excellent infrastructure and an amazing faculty. Teachers explain concepts very thoroughly in a simple and effective manner, making it easy for students to understand and remember topics. Every teacher actively encourages students to participate in various activities, helping them build confidence and overall personality.
+
+The school also provides numerous opportunities through extracurricular activities at various levels across India, which greatly helps in the holistic development of students.
+
+The well-planned worksheets encourage students to think beyond prescribed textbooks and develop critical thinking skills. We are extremely satisfied as parents, as our children get ample opportunities to explore, learn, and grow in all aspects.
+
+The school maintains an excellent balance between academic and co-curricular activities.
+
+I extend my heartfelt thanks and best wishes to the teachers, coordinators, respected Principal Ma’am, and the entire management team. I highly recommend Abhishek International School to parents seeking quality education and overall development for their children.`,
+  author: "Mahesh Dashrath Kamble",
+  role: "Parent",
+  image: "/testimonials/Mahesh Dashrath Kamble.jpg",
+},
+
+    {
       quote: "I'm thoroughly impressed with the school's academic and extracurricular offerings, which provide in-depth knowledge and clarity on various subjects. The teachers excel at building a strong foundation and addressing students' doubts, making it an excellent choice for my daughters' education. I'm delighted with their progress and highly recommend this school.",
       author: "Mrs. Snehal Lokhande",
       role: "Parent of Hindavi and Shivannya Lokhande",
